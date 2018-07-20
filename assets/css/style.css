@@ -1,0 +1,32 @@
+th{
+    text-align: center;
+}
+
+.header {
+width: 90%;
+margin: auto;
+height: 250px;
+}
+
+.header-text{
+    padding-top: 30px;
+}
+
+.add-bus-body{
+    width: 75%;
+    margin: auto;
+    margin-top: 20px;
+    text-align: left;
+}
+
+#addbox{
+    width: 75%;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.table{
+    width: 90%;
+    margin: auto;
+}

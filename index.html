@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|Bowlby+One+SC|Bungee|Bungee+Inline|Nanum+Gothic+Coding|Rubik+Mono+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Bus Scheduler</title>
+</head>
+
+<body class = "text-canter">
+    <div class="header jumbotron my-5">
+        <h1 class="text-center header-text"><i class="fa fa-bus" aria-hidden="true"></i> Where's my bus?</h1>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Bus Name</th>
+                <th scope="col">Destination</th>
+                <th scope="col">Frequency</th>
+                <th scope="col">Next Arrival</th>
+                <th scope="col">Minutes Away</th>
+            </tr>
+        </thead>
+        <tbody class = "text-center" id = "busStore">
+        </tbody>
+    </table>
+    <div class="col-lg-6" id="addbox">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title"> <i class="fa fa-plus-square" aria-hidden="true"></i> Add Bus</h3>
+            </div>
+            <div class="panel-body">
+
+                <form role="form" class = "add-bus-body">
+                    <div class="form-group">
+                        <label for="name-input">Bus Name:</label>
+                        <input class="form-control" id="name-input" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="role-input">Destination:</label>
+                        <input class="form-control" id="destination-input" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="start-date-input">First Train Time (HH:MM -military time):</label>
+                        <input class="form-control" id="first-time-input" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="monthly-rate-input">Frequency:</label>
+                        <input class="form-control" id="frequency-input" type="number">
+                    </div>
+                    <button class="btn btn-default" id="add-bus" type="submit">Add</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script src="./assets/javascript/app.js"></script>
+</body>
+
+</html>
